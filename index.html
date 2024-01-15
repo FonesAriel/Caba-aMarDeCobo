@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand Hotel</title>
+    <link rel="shortcut icon" type="image/png" href="img/crown.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <div class="navbar">
+
+        <input type="checkbox" class="checkbox" id="click" hidden>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <label for="click">
+                <div class="menu-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </label>
+
+            <ul class="social-icons-list">
+                <li>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+
+            <div class="año">
+                <p>2024</p>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+
+        <!--navigation-->
+        <nav class="navigation">
+            <div class="navigation-header">
+                <h1 class="navigation-heading">CABAÑA MAR DE COBO</h1>
+            </div>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#inicio" class="navigation-link">INICIO</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#acerca-de-nosotros" class="navigation-link">ACERCA DE NOSOTROS</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#imagenes" class="navigation-link">IMAGENES</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>©2024 CABAÑA MAR DE COBO.</p>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!--header -->
+        <header class="header">
+            <div class="brand">
+                <h3 class="hotel-heading">CABAÑA MAR DE COBO</h3>
+            </div>
+
+            <div class="banner">
+                <h1 class="banner-heading">BIENVENIDOS A CABAÑA MAR DE COBO</h1>
+                <p class="banner-paragraph">EL DESTINO PERFECTO PARA TUS VACACIONES SOÑADAS </p>
+                <button class="banner-button" onclick="scrollToContent()">¡Vamos!</button>
+            </div>
+        </header>
+        <!--end of header -->
+
+        <!-- About Us-->
+        <section id="acerca-de-nosotros" class="about-us">
+            <div class="about-us-content">
+                <h1 class="about-us-heading">ACERCA DE NOSOTROS</h1>
+                <div class="underline">
+                    <div class="big-underline"></div>
+                    <div class="small-underline"></div>
+                </div>
+
+                <h3 class="sub-heading">CABAÑA MAR DE COBO</h3>
+                <p class="about-us-paragraph">Bienvenido a nuestra encantadora cabaña, un refugio acogedor y sereno que
+                    invita a escapar del bullicio de la vida cotidiana. Situada en Mar de Cobo, nuestra cabaña combina
+                    la
+                    tranquilidad de la naturaleza con comodidades modernas para ofrecerte una experiencia de vacaciones
+                    única!
+                </p>
+            </div>
+            <figcaption class="about-us-images">
+                <img src="https://images.unsplash.com/photo-1550504969-937eb02c18b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="image image-1" />
+                <img src="https://images.unsplash.com/photo-1520285774798-2f1616131a68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="image image-2" />
+                <img src="https://images.unsplash.com/photo-1516938009988-c0066a8a34f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="image image-3" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="image image-4" />
+            </figcaption>
+
+        </section>
+        <!-- end of About Us -->
+
+        <!--Rooms-->
+        <section id="imagenes" class="rooms">
+            <div class="common-header">
+                <h1 class="common-heading">IMAGENES</h1>
+                <div class="underline">
+                    <div class="small-underline"></div>
+                    <div class="big-underline"></div>
+                </div>
+            </div>
+            <div class="rooms-cards-wrapper">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        class="room-img">
+                    <div class="room-card-content">
+                        <h4 class="room-card-heading">Single Room</h4>
+                        <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
+                        <p class="room-price">$99.00</p>
+                        <button class="room-card-btn">
+                            Book Now
+                            <i class="fas fa-angle-double-right btn-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1508253578933-20b529302151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        class="room-img">
+                    <div class="room-card-content">
+                        <h4 class="room-card-heading">Double Room</h4>
+                        <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
+                        <p class="room-price">$199.00</p>
+                        <button class="room-card-btn">
+                            Book Now
+                            <i class="fas fa-angle-double-right btn-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1547253159-4a1d0d3ca86c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        class="room-img">
+                    <div class="room-card-content">
+                        <h4 class="room-card-heading">Lux</h4>
+                        <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
+                        <p class="room-price">$299.00</p>
+                        <button class="room-card-btn">
+                            Book Now
+                            <i class="fas fa-angle-double-right btn-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1491955478222-69ae25414368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                        class="room-img">
+                    <div class="room-card-content">
+                        <h4 class="room-card-heading">VIP</h4>
+                        <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
+                        <p class="room-price">$399.00</p>
+                        <button class="room-card-btn">
+                            Book Now
+                            <i class="fas fa-angle-double-right btn-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="main-part">
+                <div class="footer-list-wrapper">
+                    <h3 class="footer-heading">CABAÑA MAR DE COBO</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">
+                                support@grandhotel.com
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">
+                                Santorini, Main Street 123
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">
+                                Tel: +123 456 789
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="creator-part">
+                    <div class="copyright-text">
+                        <p>©2024 CABAÑA MAR DE COBO</p>
+                    </div>
+                </div>
+        </footer>
+        <!-- end of footer -->
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
