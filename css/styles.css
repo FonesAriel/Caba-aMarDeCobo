@@ -562,3 +562,36 @@ body {
 }
 
 /* end of footer */
+
+/* Consultas de medios para tabletas y dispositivos móviles */
+@media only screen and (max-width: 768px) {
+
+    /* Estilos que se aplicarán en dispositivos con una anchura máxima de 768 píxeles */
+    .sidebar {
+        width: 100%;
+    }
+
+    .checkbox:checked~.navigation {
+        left: 0;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .about-us {
+        margin-left: 0;
+    }
+
+    .common-header {
+        padding: 2rem;
+    }
+
+    .rooms {
+        margin-left: 0;
+    }
+
+    .footer {
+        margin-left: 0;
+    }
+}
