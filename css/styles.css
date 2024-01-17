@@ -474,7 +474,7 @@ body {
 /* fin */
 
 /* Consultas de medios para tabletas y dispositivos móviles */
-@media only screen and (max-width: 570) {
+@media only screen and (max-width: 768) {
 
     /* Estilos que se aplicarán en dispositivos con una anchura máxima de 768 píxeles */
     .sidebar {
