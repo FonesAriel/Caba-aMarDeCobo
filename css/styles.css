@@ -483,9 +483,12 @@ body {
     }
 
     .navigation {
-        left: -20rem; /* Ajuste de la posición de navegación */
+        left: -34rem; /* Ajuste de la posición de navegación */
     }
-
+    
+    .checkbox:checked~.navigation {
+        left: 6rem;
+    }
     .header {
         margin-left: 6rem; /* Ajuste del margen izquierdo del encabezado */
     }
