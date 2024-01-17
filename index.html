@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grand Hotel</title>
-    <link rel="shortcut icon" type="image/png" href="img/crown.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link
@@ -15,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./img/cabina.png">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Grand Hotel</title>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
         <input type="checkbox" class="checkbox" id="click" hidden>
 
-        <!-- sidebar -->
+        <!-- barra -->
         <div class="sidebar">
             <label for="click">
                 <div class="menu-icon">
@@ -47,9 +48,9 @@
                 <p>2024</p>
             </div>
         </div>
-        <!-- end of sidebar -->
+        <!-- final -->
 
-        <!--navigation-->
+        <!--navegacion-->
         <nav class="navigation">
             <div class="navigation-header">
                 <h1 class="navigation-heading">CABAÑA MAR DE COBO</h1>
@@ -69,7 +70,7 @@
                 <p>©2024 CABAÑA MAR DE COBO.</p>
             </div>
         </nav>
-        <!-- end of navbar  -->
+        <!-- final -->
 
         <!--header -->
         <header class="header">
@@ -83,9 +84,9 @@
                 <button class="banner-button" onclick="scrollToContent()">¡Vamos!</button>
             </div>
         </header>
-        <!--end of header -->
+        <!-- final -->
 
-        <!-- About Us-->
+        <!-- acerca de nosotros -->
         <section id="acerca-de-nosotros" class="about-us">
             <div class="about-us-content">
                 <h1 class="about-us-heading">ACERCA DE NOSOTROS</h1>
@@ -103,20 +104,16 @@
                 </p>
             </div>
             <figcaption class="about-us-images">
-                <img src="https://images.unsplash.com/photo-1550504969-937eb02c18b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    class="image image-1" />
-                <img src="https://images.unsplash.com/photo-1520285774798-2f1616131a68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    class="image image-2" />
-                <img src="https://images.unsplash.com/photo-1516938009988-c0066a8a34f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    class="image image-3" />
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    class="image image-4" />
+                <img src="./img/1.jpg" class="image image-1" />
+                <img src="./img/2.png" class="image image-2" />
+                <img src="./img/3.jpg" class="image image-3" />
+                <img src="./img/4.jpg" class="image image-4" />
             </figcaption>
 
         </section>
-        <!-- end of About Us -->
+        <!-- final -->
 
-        <!--Rooms-->
+        <!--imagenes-->
         <section id="imagenes" class="rooms">
             <div class="common-header">
                 <h1 class="common-heading">IMAGENES</h1>
@@ -127,60 +124,20 @@
             </div>
             <div class="rooms-cards-wrapper">
                 <div class="room-card">
-                    <img src="./img/2473745958334019264.jpg.png"
-                        class="room-img">
-                    <div class="room-card-content">
-                        <h4 class="room-card-heading">TITULO</h4>
-                        <p class="room-card-paragraph">TEXTO</p>
-                        <p class="room-price">$</p>
-                        <button class="room-card-btn">
-                            Book Now
-                            <i class="fas fa-angle-double-right btn-arrow"></i>
-                        </button>
-                    </div>
+                    <img src="./img/2473745958334019264.jpg.png" class="room-img">
                 </div>
                 <div class="room-card">
-                    <img src="./img/2483960808557471631.jpg.png"
-                        class="room-img">
-                    <div class="room-card-content">
-                        <h4 class="room-card-heading">TITULO</h4>
-                        <p class="room-card-paragraph">TEXTO</p>
-                        <p class="room-price">$</p>
-                        <button class="room-card-btn">
-                            Book Now
-                            <i class="fas fa-angle-double-right btn-arrow"></i>
-                        </button>
-                    </div>
+                    <img src="./img/2483960808557471631.jpg.png" class="room-img">
                 </div>
                 <div class="room-card">
-                    <img src="./img/2563968133666491484.jpg.png"
-                        class="room-img">
-                    <div class="room-card-content">
-                        <h4 class="room-card-heading">TITULO</h4>
-                        <p class="room-card-paragraph">TEXTO</p>
-                        <p class="room-price">$</p>
-                        <button class="room-card-btn">
-                            Book Now
-                            <i class="fas fa-angle-double-right btn-arrow"></i>
-                        </button>
-                    </div>
+                    <img src="./img/2563968133666491484.jpg.png" class="room-img">
                 </div>
                 <div class="room-card">
-                    <img src="./img/2563968133691664004.jpg.png"
-                        class="room-img">2
-                    <div class="room-card-content">
-                        <h4 class="room-card-heading">TITULO</h4>
-                        <p class="room-card-paragraph">TEXTO</p>
-                        <p class="room-price">$</p>
-                        <button class="room-card-btn">
-                            Book Now
-                            <i class="fas fa-angle-double-right btn-arrow"></i>
-                        </button>
-                    </div>
+                    <img src="./img/2563968133691664004.jpg.png" class="room-img">
                 </div>
             </div>
-
         </section>
+        <!-- final -->
 
         <!-- footer -->
         <footer class="footer">
@@ -212,7 +169,7 @@
                     </div>
                 </div>
         </footer>
-        <!-- end of footer -->
+        <!-- final -->
         <script src="./js/script.js"></script>
 </body>
 

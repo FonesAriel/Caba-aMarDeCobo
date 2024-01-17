@@ -1,4 +1,4 @@
-/* common styles */
+/* comun styles */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -10,10 +10,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* end of common styles */
+/* fin */
 
 /* navbar */
-/* sidebar */
+/* barra */
 .sidebar {
     width: 8rem;
     height: 100%;
@@ -74,9 +74,9 @@ body {
     color: #555;
 }
 
-/* end of sidebar */
+/* fin */
 
-/* navigation */
+/* navegacion */
 .navigation {
     position: fixed;
     left: -32rem;
@@ -179,8 +179,7 @@ body {
     width: 2.5rem;
 }
 
-/* end of navigation */
-/* end of navbar */
+/* fin */
 
 /*Header*/
 .header {
@@ -257,9 +256,9 @@ body {
     }
 }
 
-/*end of header*/
+/* fin */
 
-/*About Us*/
+/*acerca de nosotros*/
 .about-us {
     margin-left: 8rem;
     display: flex;
@@ -341,7 +340,7 @@ body {
     transform: translate(-10%-30%);
 }
 
-/* end of about us */
+/* fin */
 
 /* common header */
 .common-header {
@@ -370,9 +369,9 @@ body {
     background-color: #b85d1c;
 }
 
-/* end of common header */
+/* fin */
 
-/* rooms */
+/* imagenes */
 .rooms {
     margin-left: 8rem;
 }
@@ -383,79 +382,43 @@ body {
     justify-content: center;
 }
 
+/* Estilos para el contenedor de las tarjetas de habitaciones */
 .room-card {
-    width: 60rem;
-    margin: 5rem;
-    background-color: #15141b;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
+    width: 320px;
+    /* Ajusta el ancho de la tarjeta según tus necesidades */
+    margin: 1.5rem;
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento de contenido para un aspecto más limpio */
+    border-radius: 15px;
+    /* Agrega bordes redondeados a las tarjetas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Agrega una sombra más pronunciada para resaltar las tarjetas */
+    transition: transform 0.3s ease-in-out;
+    /* Agrega una transición suave para efectos de hover */
 }
 
 .room-img {
     width: 100%;
-    height: 60%;
+    height: 60vh;
+    object-fit: cover;
+    /* Para asegurarte de que la imagen cubra completamente el contenedor */
+    border-radius: 10px;
+    /* Añade bordes redondeados para un aspecto más atractivo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave para resaltar la imagen */
+    transition: transform 0.3s ease-in-out;
+    /* Agrega una transición suave para efectos de hover */
 }
 
-.room-card-content {
-    color: #ddd;
-    padding: 2rem;
+/* Efecto de hover para las tarjetas de habitaciones */
+.room-card:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño en el hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* Aumenta la sombra en el hover */
 }
 
-.room-card-heading {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 300;
-}
-
-.room-card-paragraph {
-    font-size: 1.5rem;
-    color: #777;
-}
-
-.room-price {
-    font-size: 5rem;
-    font-weight: 300;
-    text-align: right;
-    margin: 0;
-}
-
-.room-card-btn {
-    width: 15rem;
-    padding: 1.5rem 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #b85d1c;
-    background-color: transparent;
-    border: .1rem solid #b85d1c;
-    border-radius: 10rem;
-    outline: none;
-    cursor: pointer;
-}
-
-.rooms-btn-wrapper {
-    text-align: center;
-}
-
-.rooms-btn {
-    width: 20rem;
-    padding: 1.5rem 1rem;
-    margin: 4rem 0;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #b85d1c;
-    border: .2rem solid #b85d1c;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, .2);
-    transition: all .2s;
-}
-
-.rooms-btn:hover {
-    color: #ddd;
-    background-color: #b85d1c;
-}
-
-/* end of rooms */
+/* fin */
 
 /* footer */
 .footer {
@@ -561,7 +524,7 @@ body {
     color: #bbb;
 }
 
-/* end of footer */
+/* fin */
 
 /* Consultas de medios para tabletas y dispositivos móviles */
 @media only screen and (max-width: 768px) {
@@ -593,5 +556,9 @@ body {
 
     .footer {
         margin-left: 0;
+    }
+
+    .rooms-cards-wrapper {
+        justify-content: space-around;
     }
 }

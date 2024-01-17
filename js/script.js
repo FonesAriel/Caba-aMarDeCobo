@@ -31,3 +31,4 @@ document.querySelectorAll('.navigation-link').forEach(link => {
         }
     });
 });
+
