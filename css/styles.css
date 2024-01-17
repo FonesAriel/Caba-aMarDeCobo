@@ -418,6 +418,25 @@ body {
     /* Aumenta la sombra en el hover */
 }
 
+#miBoton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px
+}
+
+#miBoton:hover {
+    background-color: #2980b9;
+}
+
+
 /* fin */
 
 /* footer */
@@ -475,33 +494,52 @@ body {
 
 @media only screen and (max-width: 412px) and (max-height: 914px) {
     html {
-        font-size: 30%; /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
+        font-size: 30%;
+        /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
     }
 
     .sidebar {
-        width: 6rem; /* Ajuste del ancho de la barra lateral */
+        width: 6rem;
+        /* Ajuste del ancho de la barra lateral */
     }
 
     .navigation {
-        left: -34rem; /* Ajuste de la posición de navegación */
+        left: -34rem;
+        /* Ajuste de la posición de navegación */
     }
-    
+
     .checkbox:checked~.navigation {
         left: 6rem;
     }
+
     .header {
-        margin-left: 6rem; /* Ajuste del margen izquierdo del encabezado */
+        margin-left: 6rem;
+        /* Ajuste del margen izquierdo del encabezado */
     }
 
     .about-us {
-        margin-left: 6rem; /* Ajuste del margen izquierdo de la sección "Acerca de nosotros" */
+        margin-left: 0;
+        /* Ajuste del margen izquierdo de la sección "Acerca de nosotros" */
     }
 
+    
     .rooms {
-        margin-left: 6rem; /* Ajuste del margen izquierdo de la sección de habitaciones */
+        margin-left: 6rem;
+        /* Ajuste del margen izquierdo de la sección de habitaciones */
+    }
+
+    .image {
+        width: 25rem;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+        border-radius: 4rem;
+        border: 0.2rem solid #b85d1c;
     }
 
     .footer {
-        margin-left: 6rem; /* Ajuste del margen izquierdo del pie de página */
+        margin-left: 6rem;
+        /* Ajuste del margen izquierdo del pie de página */
     }
 }
