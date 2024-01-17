@@ -473,39 +473,32 @@ body {
 
 /* fin */
 
-/* Consultas de medios para tabletas y dispositivos móviles */
-@media only screen and (max-width: 768px) {
-
-    /* Estilos que se aplicarán en dispositivos con una anchura máxima de 768 píxeles */
-    .sidebar {
-        width: 100%;
+@media only screen and (max-width: 412px) and (max-height: 914px) {
+    html {
+        font-size: 30%; /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
     }
 
-    .checkbox:checked~.navigation {
-        left: 0;
+    .sidebar {
+        width: 6rem; /* Ajuste del ancho de la barra lateral */
+    }
+
+    .navigation {
+        left: -20rem; /* Ajuste de la posición de navegación */
     }
 
     .header {
-        margin-left: 0;
+        margin-left: 6rem; /* Ajuste del margen izquierdo del encabezado */
     }
 
     .about-us {
-        margin-left: 0;
-    }
-
-    .common-header {
-        padding: 2rem;
+        margin-left: 6rem; /* Ajuste del margen izquierdo de la sección "Acerca de nosotros" */
     }
 
     .rooms {
-        margin-left: 0;
+        margin-left: 6rem; /* Ajuste del margen izquierdo de la sección de habitaciones */
     }
 
     .footer {
-        margin-left: 0;
-    }
-
-    .rooms-cards-wrapper {
-        justify-content: space-around;
+        margin-left: 6rem; /* Ajuste del margen izquierdo del pie de página */
     }
 }
