@@ -420,7 +420,7 @@ body {
 
 /* fin */
 
-/* footer */
+/* Footer */
 .footer {
     margin-left: 8rem;
 }
@@ -452,6 +452,11 @@ body {
     font-size: 1.4rem;
     text-decoration: none;
     color: #bbb;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-list-link:hover {
+    color: #fff;
 }
 
 .creator-part {
@@ -471,10 +476,11 @@ body {
     color: #bbb;
 }
 
-/* fin */
+/* Fin */
+
 
 /* Consultas de medios para tabletas y dispositivos móviles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
 
     /* Estilos que se aplicarán en dispositivos con una anchura máxima de 768 píxeles */
     .sidebar {
@@ -507,5 +513,11 @@ body {
 
     .rooms-cards-wrapper {
         justify-content: space-around;
+    }
+
+    /* Estilos adicionales para el enlace de Instagram en dispositivos móviles */
+    .social-link {
+        font-size: 1.5rem; /* Ajusta el tamaño del icono de Instagram para dispositivos móviles */
+        margin: 0.5rem; /* Espaciado adicional para mejorar la legibilidad en dispositivos móviles */
     }
 }
