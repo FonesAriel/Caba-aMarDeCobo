@@ -498,36 +498,38 @@ body {
         /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
     }
 
-    .about-us-images img {
-        display: none;
-        /* Oculta todas las imágenes dentro de la clase about-us-images */
-    }
+/* Oculta todas las imágenes dentro de la clase about-us-images */
+.about-us-images img {
+    display: none;
+}
 
-    .about-us-images:after {
-        content: "";
-        display: block;
-        background: url('https://media.diariopopular.com.ar/p/91468473932931d08a322bc89403ec47/adjuntos/143/imagenes/008/059/0008059428/1140x0/smart/imagepng.png') center center/contain no-repeat;
-        /* Ajusta el tamaño y la posición de la nueva imagen */
-        height: 150px;
-        /* Ajusta la altura de la nueva imagen */
-        width: 90%;
-        /* Ajusta el ancho de la nueva imagen al 100% del contenedor */
-        margin-top: 130px;
-        /* Mueve la nueva imagen hacia abajo */
-        border-radius: 30px;
-        /* Añade bordes redondeados */
-        overflow: hidden;
-        /* Asegura que los bordes redondeados se muestren correctamente */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Añade una sombra suave */
-        transition: transform 0.3s ease-in-out;
-        /* Añade una transición suave al hacer cambios */
-    }
+/* Configuración de la imagen de fondo */
+.about-us-images:after {
+    content: "";
+    display: block;
+    background: url('https://media.diariopopular.com.ar/p/91468473932931d08a322bc89403ec47/adjuntos/143/imagenes/008/059/0008059428/1140x0/smart/imagepng.png') center center/contain no-repeat;
+    /* Ajusta el tamaño y la posición de la nueva imagen */
+    height: 150px;
+    /* Ajusta la altura de la nueva imagen */
+    width: 90%;
+    /* Ajusta el ancho de la nueva imagen al 100% del contenedor */
+    margin-top: 130px;
+    /* Mueve la nueva imagen hacia abajo */
+    border-radius: 30px;
+    /* Añade bordes redondeados */
+    overflow: hidden;
+    /* Asegura que los bordes redondeados se muestren correctamente */
+    box-shadow: 0 4px 8px rgba(239, 230, 55, 0.1), 0 0 20px rgba(255, 215, 0, 0.5);
+    /* Añade una sombra suave y una sombra dorada */
+    transition: transform 0.3s ease-in-out;
+    /* Añade una transición suave al hacer cambios */
+}
 
-    .about-us-images:after:hover {
-        transform: scale(1.05);
-        /* Hace que la imagen aumente ligeramente al pasar el ratón por encima */
-    }
+/* Efecto de escala al pasar el ratón por encima */
+.about-us-images:after:hover {
+    transform: scale(1.05);
+    /* Hace que la imagen aumente ligeramente al pasar el ratón por encima */
+}
 
     .banner-button {
         width: 15rem;
