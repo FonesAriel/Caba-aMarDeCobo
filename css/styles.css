@@ -498,6 +498,9 @@ body {
         /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
     }
 
+    .banner-button {
+        width: 15rem;
+    }
     .sidebar {
         width: 6rem;
         /* Ajuste del ancho de la barra lateral */
