@@ -17,7 +17,7 @@ body {
 .sidebar {
     width: 8rem;
     height: 100%;
-    background-color: #eee;
+    background-color: #efc20e;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -498,39 +498,59 @@ body {
         /* Ajuste del tamaño de fuente para dimensiones más pequeñas */
     }
 
-/* Oculta todas las imágenes dentro de la clase about-us-images */
-.about-us-images img {
-    display: none;
-}
+    /* Oculta todas las imágenes dentro de la clase about-us-images */
+    .about-us-images img {
+        display: none;
+    }
 
-/* Configuración de la imagen de fondo */
-.about-us-images:after {
-    content: "";
-    display: block;
-    background: url('https://media.diariopopular.com.ar/p/91468473932931d08a322bc89403ec47/adjuntos/143/imagenes/008/059/0008059428/1140x0/smart/imagepng.png') center center/contain no-repeat;
-    /* Ajusta el tamaño y la posición de la nueva imagen */
-    height: 150px;
-    /* Ajusta la altura de la nueva imagen */
-    width: 90%;
-    /* Ajusta el ancho de la nueva imagen al 100% del contenedor */
-    margin-top: 130px;
-    /* Mueve la nueva imagen hacia abajo */
-    border-radius: 30px;
-    /* Añade bordes redondeados */
-    overflow: hidden;
-    /* Asegura que los bordes redondeados se muestren correctamente */
-    box-shadow: 0 4px 8px rgba(239, 230, 55, 0.1), 0 0 20px rgba(255, 215, 0, 0.5);
-    /* Añade una sombra suave y una sombra dorada */
-    transition: transform 0.3s ease-in-out;
-    /* Añade una transición suave al hacer cambios */
-}
+    /* Configuración de la imagen de fondo */
+    .about-us-images:after {
+        content: "";
+        display: block;
+        background: url('https://media.diariopopular.com.ar/p/91468473932931d08a322bc89403ec47/adjuntos/143/imagenes/008/059/0008059428/1140x0/smart/imagepng.png') center center/contain no-repeat;
+        /* Ajusta el tamaño y la posición de la nueva imagen */
+        height: 150px;
+        /* Ajusta la altura de la nueva imagen */
+        width: 90%;
+        /* Ajusta el ancho de la nueva imagen al 100% del contenedor */
+        margin-top: 130px;
+        /* Mueve la nueva imagen hacia abajo */
+        border-radius: 30px;
+        /* Añade bordes redondeados */
+        overflow: hidden;
+        /* Asegura que los bordes redondeados se muestren correctamente */
+        box-shadow: 0 4px 8px rgba(239, 230, 55, 0.1), 0 0 20px rgba(255, 215, 0, 0.5);
+        /* Añade una sombra suave y una sombra dorada */
+        transition: transform 0.3s ease-in-out;
+        /* Añade una transición suave al hacer cambios */
+    }
 
-/* Efecto de escala al pasar el ratón por encima */
-.about-us-images:after:hover {
-    transform: scale(1.05);
-    /* Hace que la imagen aumente ligeramente al pasar el ratón por encima */
-}
+    /* Efecto de escala al pasar el ratón por encima */
+    .about-us-images:after:hover {
+        transform: scale(1.05);
+        /* Hace que la imagen aumente ligeramente al pasar el ratón por encima */
+    }
 
+    .hotel-heading {
+        font-size: 6rem;
+        margin-left: 10px;
+    }
+
+    .banner-heading {
+        font-size: 8rem;
+        text-align: center;
+        /* Centra el texto horizontalmente */
+    }
+
+    .banner-paragraph {
+        font-size: 3rem;
+        text-align: center;
+        /* Centra el texto horizontalmente */
+    }
+
+    .sub-heading {
+        text-align: center;
+    }
     .banner-button {
         width: 15rem;
     }
