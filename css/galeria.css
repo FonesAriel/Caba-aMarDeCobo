@@ -1,0 +1,164 @@
+/* Importa la fuente Montserrat con peso 500 desde Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+/* Define las variables de la raíz del documento, establece el tamaño base de la fuente */
+:root {
+    font-size: 10px;
+    /* Tamaño base de la fuente en píxeles */
+}
+
+/* Establece el modelo de caja para todos los elementos y sus pseudoelementos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    min-height: 100vh;
+    /* Establece la altura mínima del cuerpo al 100% del viewport height */
+    background-color: #ffffff;
+    /* Color de fondo blanco */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 100rem;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 0 2rem 2rem;
+    /* Relleno del contenedor con 0 en los lados y 2rem en la parte inferior */
+}
+
+/* Estilos para los encabezados */
+.heading {
+    font-family: "Montserrat", Arial, sans-serif;
+    /* Fuente para los encabezados */
+    font-size: 4rem;
+    /* Tamaño de la fuente */
+    font-weight: 500;
+    /* Peso de la fuente */
+    line-height: 1.5;
+    /* Altura de línea */
+    text-align: center;
+    /* Alineación centrada del texto */
+    padding: 3.5rem 0;
+    /* Relleno superior e inferior de 3.5rem y 0 en los lados */
+    color: #1a1a1a;
+    /* Color del texto */
+}
+
+/* Estilos para un span dentro de un encabezado */
+.heading span {
+    display: block;
+    /* Hace que el span sea un bloque con ancho completo */
+}
+
+/* Estilos para la galería de imágenes */
+.gallery {
+    display: flex;
+    /* Utiliza flexbox para el diseño de la galería */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en filas */
+    margin: -1rem -1rem;
+    /* Negativo del margen para corregir el espacio entre elementos */
+}
+
+/* Estilos para una línea pequeña debajo del texto */
+.small-underline {
+    width: 9rem;
+    /* Ancho de la línea */
+    height: .1rem;
+    /* Altura de la línea */
+    margin: 0 auto 1rem auto;
+    /* Margen inferior de 1rem y centrado horizontal */
+    background-color: #b85d1c;
+    /* Color de fondo de la línea */
+}
+
+/* Estilos para una línea grande debajo del texto */
+.big-underline {
+    width: 20rem;
+    /* Ancho de la línea */
+    height: .1rem;
+    /* Altura de la línea */
+    margin: auto;
+    /* Centrado horizontal */
+    background-color: #b85d1c;
+    /* Color de fondo de la línea */
+    margin-bottom: 2rem;
+    /* Margen inferior de 2rem */
+}
+
+/* Estilos para encabezado común */
+.common-heading {
+    font-size: 4rem;
+    /* Tamaño de la fuente */
+    font-weight: 300;
+    /* Peso de la fuente */
+    letter-spacing: 2rem;
+    /* Espaciado entre letras */
+    margin-right: -2rem;
+}
+
+/* Estilos para el encabezado común */
+.common-header {
+    padding: 1rem;
+    /* Relleno de 1rem en todos los lados */
+    text-align: center;
+    /* Alineación centrada del texto */
+    color: #b85d1c;
+    /* Color del texto */
+}
+
+/* Estilos para los elementos de la galería de imágenes */
+.gallery-item {
+    flex: 1 0 24rem;
+    /* Distribución flexible con un tamaño base de 24rem */
+    margin: 2rem;
+    /* Margen de 2rem alrededor de cada elemento */
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    /* Sombra del elemento */
+    overflow: hidden;
+    /* Oculta el contenido que sobresale del elemento */
+}
+
+/* Estilos para las imágenes de la galería */
+.gallery-image {
+    display: block;
+    /* Hace que la imagen sea un bloque con ancho completo */
+    width: 100%;
+    /* Ancho de la imagen al 100% del contenedor */
+    height: 100%;
+    /* Altura de la imagen al 100% del contenedor */
+    object-fit: cover;
+    /* Escala la imagen para cubrir completamente el contenedor */
+    transition: transform 400ms ease-out;
+    /* Transición de transformación para el efecto hover */
+}
+
+/* Efecto hover para las imágenes de la galería */
+.gallery-image:hover {
+    transform: scale(1.15);
+    /* Escala la imagen al 115% en el efecto hover */
+}
+
+/* Estilos condicionales para la galería y sus elementos usando Grid si es compatible */
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        /* Utiliza grid para el diseño de la galería */
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        /* Columnas automáticas con un tamaño mínimo de 24rem y fracciones iguales */
+        grid-gap: 2rem;
+        /* Espaciado entre elementos de la cuadrícula */
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+        /* Elimina el margen para la galería y sus elementos cuando se utiliza Grid */
+    }
+}

@@ -32,3 +32,11 @@ document.querySelectorAll('.navigation-link').forEach(link => {
     });
 });
 
+// Obtener referencia al botón
+var boton = document.getElementById("miBoton");
+
+// Agregar un evento de clic al botón
+boton.addEventListener("click", function () {
+    // Redirigir a la página de galería
+    window.location.href = "./pages/galeria.html";
+});
