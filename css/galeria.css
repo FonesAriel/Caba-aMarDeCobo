@@ -150,7 +150,7 @@ body {
     .gallery {
         display: grid;
         /* Utiliza grid para el diseño de la galería */
-        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
         /* Columnas automáticas con un tamaño mínimo de 24rem y fracciones iguales */
         grid-gap: 2rem;
         /* Espaciado entre elementos de la cuadrícula */
@@ -162,3 +162,68 @@ body {
         /* Elimina el margen para la galería y sus elementos cuando se utiliza Grid */
     }
 }
+
+/* footer */
+/* Adjusting margins of the footer to remove default spacing */
+.footer {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -12px;
+}
+
+/* Styling the main part of the page with flex display, background color, and padding */
+.main-part {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding: 4rem;
+}
+
+/* Styling for the heading in the footer */
+.footer-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: goldenrod;
+    margin: 1rem 0 3rem 0; /* top margin 1rem, bottom margin 3rem */
+}
+
+/* Styling for the unordered list in the footer */
+.footer-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for each list item in the footer */
+.footer-list-item {
+    margin-bottom: 2rem; /* Add margin below each list item */
+}
+
+/* Styling for links in the footer */
+.footer-list-link {
+    font-size: 1.4rem;
+    text-decoration: none; /* Remove default link underline */
+    color: #bbb;
+}
+
+/* Styling for the creator part, using flex display, alignment, and padding */
+.creator-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem; /* Padding on the left and right */
+}
+
+/* Styling for the copyright text */
+.copyright-text {
+    font-size: 1.3rem;
+    color: #aaa;
+}
+
+/* Styling for text on the right side in the creator part */
+.text-right {
+    font-size: 1.4rem;
+    color: #bbb;
+}
+
+
+/* fin */
