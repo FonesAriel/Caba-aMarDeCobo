@@ -226,7 +226,7 @@ body {
 }
 
 .banner-button {
-    width: 21rem;
+    width: 10rem;
     padding: 1.2rem 2rem;
     color: #333;
     letter-spacing: .1rem;
@@ -418,12 +418,13 @@ body {
 }
 
 #miBoton {
-    background-color: #3498db;
-    color: #fff;
+    background: linear-gradient(to right, gold, goldenrod);
+    color: #333;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    outline: none;
+    border-radius: 10rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: auto;
@@ -432,7 +433,7 @@ body {
 }
 
 #miBoton:hover {
-    background-color: #2980b9;
+    background: linear-gradient(to left, golden, goldenrod);
 }
 
 
