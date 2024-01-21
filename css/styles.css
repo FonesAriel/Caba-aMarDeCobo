@@ -558,6 +558,14 @@ body {
     .sidebar {
         width: 6rem;
         /* Ajuste del ancho de la barra lateral */
+        position: fixed;
+        /* La barra lateral será fija en la pantalla */
+        top: 0;
+        /* La barra lateral estará pegada en la parte superior */
+        left: 0;
+        /* La barra lateral estará pegada en el lado izquierdo */
+        height: 100%;
+        /* La barra lateral ocupará el 100% de la altura de la pantalla */
     }
 
     .navigation {
